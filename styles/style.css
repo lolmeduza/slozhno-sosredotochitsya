@@ -5,7 +5,8 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 .about__logo {
-  max-width: 375px;
+  display: grid;
+  padding-bottom: 10px;
 }
 .about__logo-image {
   inline-size: 100%;
@@ -15,7 +16,7 @@
   padding-block-end: 50px;
 }
 .header {
-  margin: 0px 10px 0px;
+  margin: 10px 10px 0px;
   padding-block-end: 40px;
 }
 .large_label {
@@ -32,6 +33,7 @@
   padding-block-end: 10px;
 }
 .header-no-bc {
+  padding-block-start: 40px;
   padding-block-end: 20px;
 }
 .footer_label {
@@ -39,4 +41,12 @@
   height: 667px;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
+}
+.header__theme-menu-list {
+  display: grid;
+  gap: 10px;
+}
+.header__theme-menu {
+  margin-block-start: 40px;
 }

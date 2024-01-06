@@ -10,8 +10,14 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 }
-.header_background {
+/* .header_background {
+  /* background-image: url(../images/cover-image-dark.png);
+} */
+.page {
   background-image: url(../images/cover-image-dark.png);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 .large_label {
   color: #db00ff;
@@ -43,6 +49,7 @@
   background-color: #ff0070;
 }
 .header_rec::before {
+  text-transform: uppercase;
   /* position: absolute; */
   content: "rec";
   color: #ff0070;
@@ -52,22 +59,25 @@
   font-style: normal;
   font-weight: 400;
   line-height: 25px; /* 138.889% */
+  margin-inline-end: 10px;
 }
-.decorated-zone {
+/* .decorated-zone {
   /* display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   justify-items: end;
-  justify-content: start; */
-  
-}
+  justify-content: start;} */
 .header_rec::after {
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  inline-size: 25px;
-  block-size: 25px;
   content: "";
-  fill: #ff0070;
+  background-color: #ff0070;
+  display: inline-block;
+  border-radius: 5px;
+  border-style: solid;
+  height: 9px;
+  width: 9px;
+  margin-inline-end: 7px;
+  margin-block-end: 2px;
+  border-color: #ff0070;
+  text-overflow: inherit;
   filter: drop-shadow(0px 0px 4px #ff0070);
 }
 .header__theme-menu-button {
@@ -106,4 +116,48 @@
   line-height: 23.4px; /* 130% */
   text-shadow: 2px 2px #ff0070;
   text-decoration: none;
+}
+
+.footer_corner {
+  position: relative;
+}
+.footer_corner::before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid #ff0070;
+  border-right: 1px solid #ff0070;
+  right: -1px;
+}
+.footer_corner::after {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid #ff0070;
+  border-left: 1px solid #ff0070;
+  bottom: 1px;
+}
+.header {
+  position: relative;
+}
+.header::before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid #ff0070;
+  border-right: 1px solid #ff0070;
+  right: -1px;
+}
+.header::after {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid #ff0070;
+  border-left: 1px solid #ff0070;
+  bottom: 1px;
+  left: 1px;
 }
