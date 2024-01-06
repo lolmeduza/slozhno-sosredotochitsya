@@ -1,5 +1,42 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  max-width: 375px;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+}
+.about__logo {
+  max-width: 375px;
+}
+.about__logo-image {
+  inline-size: 100%;
+}
+.concentration {
+  margin: 0px 10px 0px;
+  padding-block-end: 50px;
+}
+.header {
+  margin: 0px 10px 0px;
+  padding-block-end: 40px;
+}
+.large_label {
+  padding-block-end: 55px;
+}
+.decorated-zone {
+  display: grid;
+  /* justify-content: end; */
+  /* align-items: end; */
+  justify-items: end;
+}
+.simple-text {
+  padding-block-start: 10px;
+  padding-block-end: 10px;
+}
+.header-no-bc {
+  padding-block-end: 20px;
+}
+.footer_label {
+  display: flex;
+  height: 667px;
+  justify-content: center;
+  align-items: center;
 }
