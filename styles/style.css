@@ -1,11 +1,11 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  max-width: 375px;
+  margin: auto;
+  max-width: 1024px;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 .about__logo {
-  display: grid;
   padding-bottom: 10px;
 }
 .about__logo-image {
@@ -16,14 +16,17 @@
   padding-block-end: 50px;
 }
 .header {
+  display: grid;
+  height: 100%;
   margin: 10px 10px 0px;
   padding-block-end: 40px;
+  justify-items: end;
 }
 .large_label {
   padding-block-end: 55px;
 }
 .decorated-zone {
-  display: grid;
+  /* display: grid; */
   /* justify-content: end; */
   /* align-items: end; */
   justify-items: end;
@@ -38,15 +41,52 @@
 }
 .footer_label {
   display: flex;
-  height: 667px;
+  height: 100%;
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
 }
 .header__theme-menu-list {
   display: grid;
-  gap: 10px;
+  gap: 16px;
 }
 .header__theme-menu {
   margin-block-start: 40px;
+  margin-inline-end: 5px;
+}
+
+.header__theme-menu-button {
+  text-transform: lowercase;
+}
+
+@media (min-width: 768px) {
+  .header_text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: ". selected_text";
+  }
+  .selected_text {
+    grid-area: selected_text;
+    margin-block-start: 20px;
+  }
+  .about_stress {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .about_concentration {
+    display: grid;
+  }
+  .grid_header {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+  }
+  .about_advices {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .about_images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
 }
