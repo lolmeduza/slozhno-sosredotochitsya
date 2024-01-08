@@ -155,6 +155,6 @@
   height: 25px;
   border-bottom: 1px solid #ff0070;
   border-left: 1px solid #ff0070;
-  bottom: 1px;
-  left: 1px;
+  bottom: 2px;
+  left: -1px;
 }
