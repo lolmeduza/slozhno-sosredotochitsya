@@ -5,110 +5,9 @@
   max-width: 1024px;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
-
-/* @media (min-width: 375px) {
-  .large_label {
-    font-size: 118px;
-  }
-  .about__logo {
-    padding-bottom: 10px;
-  }
-
-  .selected_text {
-    margin-block-end: 18px;
-  }
-  .concentration {
-    margin: 0px 0px 0px 20px;
-    padding-block-end: 50px;
-  }
-
-  .large_label {
-    padding-block-end: 55px;
-    margin-block-start: 68px;
-    margin-inline-start: 16px;
-  }
-  .decorated-zone {
-    justify-items: end;
-  }
-  .simple-text {
-    padding-block-end: 10px;
-  }
-  .header-no-bc {
-    padding-block-start: 49px;
-    padding-block-end: 19px;
-    margin-inline-start: 9px;
-  }
-  .footer_label {
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-
-  }
-  .header__theme-menu {
-    margin-block-start: 43px;
-    margin-inline-end: 8px;
-  }
-
-  .header__theme-menu-button {
-    text-transform: lowercase;
-  }
-} */
-
-/* .about__logo-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.header__theme-menu-button_active {
+  pointer-events: none;
 }
-@media (375px <= width < 768px) {
-  .header__theme-menu {
-    margin-block-start: 51px;
-    margin-inline-end: 18px;
-  }
-  .function_position {
-    margin-block-end: 10px;
-  }
-  .position_dopamine {
-    margin-block-start: 10px;
-  }
-  .large_label {
-    padding-block-end: 55px;
-    margin-block-start: 71px;
-    margin-inline-start: 7px;
-  }
-  .header_text {
-    margin-inline-end: 10px;
-    margin-inline-end: 10px;
-    margin-block-start: -3px;
-    margin-inline-start: 10px;
-  }
-  .header::after {
-    margin-inline-start: 10px;
-  }
-  .concentration {
-    margin: 0px 10px 0px 10px;
-  }
-  .header-no-bc {
-    padding-block-start: 49px;
-    padding-block-end: 19px;
-    margin-inline-start: 1px;
-  }
-  /* .about_concentration {
-    margin-inline-start: 10px;
-  } */
-/* .header__theme-menu-list {
-    display: grid;
-    gap: 16px;
-  }
-  .header {
-    display: grid;
-    height: 100%;
-    padding-block-end: 40px;
-    justify-items: end;
-  }
-} */
 .about__logo-image {
   width: 100%;
   height: 100%;
@@ -214,11 +113,9 @@
   }
   .large_label {
     display: grid;
-    grid-row-start: 3;
     grid-column-start: 1;
     grid-column-end: span 5;
-    font-size: 156px;
-    /* text-wrap: nowrap; */
+
     font-size: 119px;
     margin-top: 45px;
     margin-left: 2px;
@@ -250,7 +147,6 @@
   }
   .grid_header {
     display: grid;
-    grid-template-columns: 1fr 4fr;
     margin-top: 61px;
     grid-template-columns: 1fr 4fr;
     margin-bottom: 18px;
@@ -340,71 +236,6 @@
   }
 }
 
-/*
-  .header__theme-menu {
-    margin-block-start: 150px;
-  }
-
-  .large_label {
-    font-size: 119px;
-    margin-top: 180px;
-    margin-bottom: 82px;
-  }
-  .header_text {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: ". selected_text";
-  }
-  .selected_text {
-    grid-area: selected_text;
-    margin-block-start: 20px;
-
-  }
-  .about_stress {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-  }
-  .about_concentration {
-    display: grid;
-  }
-  .grid_header {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-  }
-  .about_advices {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-  }
-  .about_images {
-    display: grid;
-    gap: 20px;
-    padding-block-start: 20px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-  }
-  .sunset_image {
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
-  .ice-cream_image {
-    grid-column-start: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
-  }
-  .tape_image {
-    grid-row-start: 2;
-    grid-row-end: 4;
-  }
-  .books_image {
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 2;
-  }
-  .street_image {
-    grid-column-start: 2;
-    grid-column-end: 4;
-  }
-} */
 @media (min-width: 1024px) {
   .grid_header {
     display: inline-block;
@@ -424,8 +255,9 @@
   }
   .header__theme-menu-list {
     display: flex;
-    gap: 25px;
+    gap: 22px;
   }
+
   .about_stress {
     display: grid;
     grid-template-columns: 36% 66%;
