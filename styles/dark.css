@@ -27,6 +27,14 @@
   font-weight: 700;
   line-height: 82.5%; /* 95.7px */
 }
+.footer_label {
+  color: #db00ff;
+  text-shadow: 0px 4px 0px #ff0070;
+  font-family: IBM Plex Mono;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 82.5%; /* 95.7px */
+}
 .selected_text {
   color: #000028;
   background-color: #ff0070;
@@ -56,7 +64,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: 25px; /* 138.889% */
-  margin-inline-end: 10px;
 }
 /* .decorated-zone {
   /* display: grid;
@@ -157,4 +164,75 @@
   border-left: 1px solid #ff0070;
   bottom: 2px;
   left: -1px;
+}
+@media (375px <= width < 768px) {
+  .header_rec::before {
+    margin-inline-start: 295px;
+  }
+  .header_rec::after {
+    margin-inline-start: 10px;
+  }
+  .header::after {
+    bottom: -54px;
+  }
+}
+@media (768px<= width < 1024px) {
+  .header_rec {
+    margin-left: 103px;
+    margin-top: 20px;
+  }
+  .header_rec::after {
+    margin-block-end: 2px;
+    margin-left: 10px;
+  }
+  .header::after {
+    bottom: 20px;
+    left: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .header::before {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 25px;
+    border-top: 1px solid #ff0070;
+    border-right: 1px solid #ff0070;
+    right: -1px;
+  }
+  .header_rec {
+    grid-column-start: span 5;
+    position: absolute;
+    grid-row-start: 1;
+    /* margin-right: 12px; */
+    right: -1px;
+  }
+  .header_rec::before {
+    text-transform: uppercase;
+    /* position: absolute; */
+    content: "rec";
+    color: #ff0070;
+    text-align: center;
+    font-family: IBM Plex Mono;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    margin-right: 13px;
+  }
+  .header_rec::after {
+    content: "";
+    background-color: #ff0070;
+    display: inline-block;
+    border-radius: 5px;
+    border-style: solid;
+    height: 9px;
+    width: 9px;
+    margin-inline-end: 9px;
+    margin-block-start: 8px;
+    margin-block-end: 2px;
+    border-color: #ff0070;
+    text-overflow: inherit;
+    filter: drop-shadow(0px 0px 4px #ff0070);
+  }
 }
