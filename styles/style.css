@@ -19,8 +19,15 @@
   object-fit: cover;
 }
 .header__theme-menu-button {
+  height: 26px;
+  width: 70px;
   text-transform: lowercase;
 }
+.header__theme-menu-item:focus-visible {
+  text-decoration: underline;
+  text-decoration-color: var(--accent-color);
+}
+
 @media (375px <= width < 768px) {
   .page {
     padding: 10px 10px 0px;
@@ -30,11 +37,11 @@
     margin-block-start: 70px;
   }
   .header__theme-menu-list {
-    margin-block-start: 43px;
+    margin-block-start: 39px;
     display: grid;
     justify-content: end;
-    gap: 15px;
-    margin-inline-end: 8px;
+    gap: 8px;
+    margin-inline-end: 0px;
   }
   .header__theme-menu-button {
     text-transform: lowercase;
@@ -106,16 +113,12 @@
   }
   .header__theme-menu-list {
     display: grid;
-    gap: 15px;
-    margin-top: 41px;
-    margin-right: 4px;
     justify-content: end;
+    gap: 11px;
+    margin-top: 35px;
+    margin-right: -3px;
   }
-  /* .header_rec {
-    grid-column-start: 5;
-    position: absolute;
-    grid-row-start: 1;
-  } */
+
   .large_label {
     display: grid;
     grid-column-start: 1;
@@ -134,10 +137,6 @@
     margin-inline-start: 152px;
     margin-top: -3px;
   }
-  /* .large_label {
-    font-size: 119px;
-    margin-top: 43px;
-    grid-row-start: 4; */
 
   .concentration {
     margin: 20px;
@@ -255,13 +254,12 @@
   }
   .header__theme-menu {
     grid-column-start: 3;
-    margin-left: 78px;
-    margin-top: -24px;
+    margin-left: 95px;
+    margin-top: -2px;
   }
   .header__theme-menu-list {
     display: flex;
-    gap: 25px;
-    padding: 25px;
+    gap: 10px;
   }
 
   .about_stress {
