@@ -3,6 +3,11 @@
 .page {
   margin: auto;
   max-width: 1024px;
+  background-image: var(--background-image);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 .header__theme-menu-button_active {
@@ -106,11 +111,11 @@
     margin-right: 4px;
     justify-content: end;
   }
-  .header_rec {
+  /* .header_rec {
     grid-column-start: 5;
     position: absolute;
     grid-row-start: 1;
-  }
+  } */
   .large_label {
     display: grid;
     grid-column-start: 1;
@@ -250,12 +255,13 @@
   }
   .header__theme-menu {
     grid-column-start: 3;
-    margin-top: 1px;
-    margin-left: 103px;
+    margin-left: 78px;
+    margin-top: -24px;
   }
   .header__theme-menu-list {
     display: flex;
-    gap: 22px;
+    gap: 25px;
+    padding: 25px;
   }
 
   .about_stress {
@@ -282,11 +288,11 @@
     grid-row-start: 2;
   }
 
-  .header_rec {
+  /* .header_rec {
     grid-column-start: 5;
     position: absolute;
     grid-row-start: 1;
-  }
+  } */
   .large_label {
     display: grid;
     grid-row-start: 3;

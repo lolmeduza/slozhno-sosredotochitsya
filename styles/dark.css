@@ -5,11 +5,12 @@
 */
 
 .page.theme_dark {
-  --accent-color: #ff0070;
-  --text-color: #f1b2ce;
-  --logo-color: #db00ff;
-  --background-image: url(../images/cover-image-dark.png);
-  --background-color: #000028;
+  /* background-color: var(--background-color);
+  background-image: var(--background-image);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain; */
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
@@ -18,13 +19,23 @@
 /* .header_background {
   /* background-image: url(../images/cover-image-dark.png);
 } */
-.page {
-  background-image: var(--background-image);
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-color: var(--background-color);
+.page.theme-dark {
+  --accent-color: #ff0070;
+  --text-color: #f1b2ce;
+  --logo-color: #db00ff;
+  --background-image: url(../images/cover-image-dark.png);
+  --background-color: #000028;
 }
+
+/* @media (prefers-color-scheme: dark) {
+  :root {--accent-color: #ff0070;
+    --text-color: #f1b2ce;
+    --logo-color: #db00ff;
+    --background-image: url(../images/cover-image-dark.png);
+    --background-color: #000028;
+
+  }
+} */
 .large_label {
   color: var(--logo-color);
   text-shadow: 4px 4px 0px var(--accent-color);
@@ -187,6 +198,11 @@
     margin-left: 103px;
     margin-top: 20px;
   }
+  .header_rec {
+    grid-column-start: 5;
+    position: absolute;
+    grid-row-start: 1;
+  }
   .header_rec::after {
     margin-block-end: 2px;
     margin-left: 10px;
@@ -217,6 +233,11 @@
     /* margin-right: 12px; */
     right: -1px;
   }
+  .header_rec {
+    grid-column-start: 5;
+    position: absolute;
+    grid-row-start: 1;
+  }
   .header_rec::before {
     text-transform: uppercase;
     /* position: absolute; */
@@ -245,21 +266,31 @@
     text-overflow: inherit;
     filter: drop-shadow(0px 0px 4px var(--accent-color));
   }
-  .header__theme-menu-button_type_dark {
+  /* .header__theme-menu-button_type_dark {
     padding: 3px 14px 3px 10px;
   }
+  header__theme-menu-button_type_light {
+    padding: 3px 14px 3px 10px;
+  } */
 }
-
+.header__theme-menu-button_active {
+  pointer-events: none;
+}
 .text_link:hover {
   text-decoration-line: underline;
 }
 
-.text_link:focus {
-  border: 1px solid var(--text-color);
+.text_link:focus-visible {
+  outline: 1px solid var(--text-color);
 }
 .header__theme-menu-button_active:hover {
   outline: 1px solid rgba(255, 0, 112, 0.4);
+  outline-offset: 1px;
+  padding-left: 15px;
+  padding-top: 1px;
+  padding-right: 15px;
 }
+
 .header__theme-menu-button_active:focus-visible {
   text-decoration: underline;
   text-decoration-color: var(--accent-color);
