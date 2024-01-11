@@ -228,9 +228,6 @@
     right: -1px;
   }
   .header_rec {
-    grid-column-start: span 5;
-    position: absolute;
-    grid-row-start: 1;
     /* margin-right: 12px; */
     right: -1px;
     grid-column-start: 5;
