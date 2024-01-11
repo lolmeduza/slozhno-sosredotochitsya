@@ -9,6 +9,7 @@
   --text-color: #353430;
   --logo-color: #ffc2e6;
   --background-image: url(../images/cover-image-light.png);
+  --background-color: #fff1f7;
 
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
