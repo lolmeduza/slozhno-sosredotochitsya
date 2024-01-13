@@ -264,16 +264,10 @@
 .large_label {
   color: var(--logo-color);
   text-shadow: 4px 4px 0px var(--accent-color);
-  font-style: normal;
-  font-weight: 700;
-  line-height: 82.5%;
 }
 .footer_label {
   color: var(--logo-color);
   text-shadow: 4px 4px 0px var(--accent-color);
-  font-style: normal;
-  font-weight: 700;
-  line-height: 82.5%;
 }
 .page-title-colors {
   background-color: var(--accent-color);
@@ -331,4 +325,34 @@
   border-color: var(--accent-color);
   text-overflow: inherit;
   filter: drop-shadow(0px 0px 4px var(--accent-color));
+}
+@media (375px<= width < 768px) {
+  .header_rec::before {
+    text-transform: uppercase;
+    content: "rec";
+    color: var(--accent-color);
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    position: absolute;
+    font-weight: 400;
+    line-height: 25px;
+    margin-right: 12px;
+    right: 26px;
+  }
+  .header_rec::after {
+    content: "";
+    background-color: var(--accent-color);
+    display: inline-block;
+    border-radius: 5px;
+    position: absolute;
+    right: 19px;
+    border-style: solid;
+    height: 9px;
+    width: 9px;
+    margin-block-start: 8px;
+    border-color: var(--accent-color);
+    text-overflow: inherit;
+    filter: drop-shadow(0px 0px 4px var(--accent-color));
+  }
 }
