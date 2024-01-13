@@ -50,7 +50,7 @@
     margin-block-start: 56px;
     margin-block-end: 105px;
   }
-  .header-no-bc {
+  .header-about-concenration-column {
     margin-bottom: 20px;
   }
   .simple-text {
@@ -188,7 +188,7 @@
     grid-column-start: 2;
     grid-column-end: 4;
   }
-  .text_header-no-bc {
+  .text_about-concentration {
     padding-block-start: 41px;
   }
   .function_position {
@@ -330,13 +330,13 @@
   .position_dopamine {
     margin-top: 18px;
   }
-  .header-no-bc {
+  .header-about-concenration-column {
     padding-block-start: 30px;
     padding-block-end: 19px;
     margin-inline-start: 20px;
   }
 
-  .text_header-no-bc {
+  .text_about-concentration {
     padding-block-start: 41px;
     /* padding-block-end: 39px; */
     margin-inline-start: 20px;

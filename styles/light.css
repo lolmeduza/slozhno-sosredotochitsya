@@ -9,7 +9,7 @@
   --logo-color: #ffc2e6;
   --background-color: #fff1f7;
   --background-image: url(../images/cover-image-light.png);
-  .header-no-bc {
+  .header-about-concenration-column {
     color: var(--text-color);
   }
 }
@@ -27,7 +27,9 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-
+.header__theme-menu-button {
+  color: var(--text-color);
+}
 .header_rec::before {
   display: none;
 }

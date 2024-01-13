@@ -13,10 +13,11 @@
     <link rel="stylesheet" href="styles/light.css" />
     <link rel="icon" href="images/favicon.ico" sizes="any" />
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="images/mobile-icon.png" />
     <title>Сложно сосредоточиться</title>
   </head>
   <body class="page">
-    <header class="header decorated-zone header_background">
+    <header class="header decorated-zone">
       <div class="header_rec" aria-hidden="true"></div>
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
@@ -47,21 +48,20 @@
 
       <h1 class="large_label">no focus</h1>
       <div class="header_text">
-        <h2 class="selected_text header_text_position">
+        <p class="selected_text header_text_position">
           Что делать, когда не можешь делать ничего <br />Или почему нам так
           сложно сконцентрироваться, особенно когда очень надо
-        </h2>
+        </p>
       </div>
     </header>
-    <script src="./scripts/script.js"></script>
     <main>
-      <div class="concentration about_stress">
-        <h2 class="header-no-bc text_header-no-bc">
+      <section class="concentration about_stress">
+        <h2 class="header-about-concenration-column text_about-concentration">
           Почему сосредоточиться так сложно
         </h2>
         <div>
           <h3 class="selected_text function_position">Многозадачность</h3>
-          <article class="simple-text">
+          <p class="simple-text">
             Особенно сложно сосредоточиться, когда задач много и все они —
             важные. Где же легендарная многозадачность, когда она так нужна вам
             (и всем нанимающим менеджерам этого мира)? А дело в том, что её
@@ -76,11 +76,11 @@
             задач, организм паникует и выделяет кортизол и адреналин — «гормоны
             стресса». Из-за этого мы работаем невнимательно: ошибаемся и быстро
             устаём.
-          </article>
+          </p>
           <!-- </div>
         <div> -->
           <h3 class="selected_text position_dopamine">Дофамин</h3>
-          <article class="simple-text">
+          <p class="simple-text">
             С гормонами стресса всё понятно, но дальше — ещё интереснее. В нашей
             невозможности сосредоточиться замешана и полная противоположность
             стрессу — дофамин. Это вещество участвует в системе вознаграждения
@@ -89,38 +89,40 @@
             соцсетях. В это время и выделяется дофамин — и мы чувствуем
             удовольствие. Получается замкнутый круг: чем больше отвлекаешься,
             тем больше удовольствия получаешь.
-          </article>
+          </p>
         </div>
-      </div>
-      <div class="concentration about_concentration">
+      </section>
+      <section class="concentration about_concentration">
         <div class="grid_header">
-          <h2 class="header-no-bc">Что снижает концентрацию внимания?</h2>
+          <h2 class="header-about-concenration-column">
+            Что снижает концентрацию внимания?
+          </h2>
         </div>
         <div class="function">
           <h3 class="selected_text">Многозадачность</h3>
-          <article class="simple-text">
+          <p class="simple-text">
             Как концентрация может снижаться из-за… концентрации? Любая
             стрессовая ситуация (и резко меняющийся мир в целом) заставляет наш
             мозг постоянно «сканировать» окружающую среду на предмет опасности.
             Например, читать новости вместо работы. Но быть собранными всё время
             — невозможно. Концентрация — мышца, и она может не выдержать, если
             не давать ей отдохнуть.
-          </article>
+          </p>
         </div>
         <div class="eat">
           <h3 class="selected_text new_eat">Еда</h3>
-          <article class="simple-text">
+          <p class="simple-text">
             «Быстрые углеводы» — сахар, белый хлеб, сладости — молниеносно
             доставляют в мозг энергию и помогают ему лучше работать. Но уходит
             эта энергия также быстро, как и приходит. А мы в результате попадаем
             на «углеводные качели»: как только действие «быстрых углеводов»
             заканчивается, мы чувствуем усталость и сонливость. И хотим ещё
             больше быстрых углеводов.
-          </article>
+          </p>
         </div>
         <div class="gadjet">
           <h3 class="selected_text new_gadjet">Гаджеты</h3>
-          <article class="simple-text">
+          <p class="simple-text">
             Да-да, это та самая ситуация, когда на экране ноутбука — код, в
             наушниках — подкаст, а на компьютере фоном — ещё и видео с забавными
             утятами. В результате мозг пытается переключиться с одной задачи на
@@ -128,13 +130,12 @@
             концентрации, человеку в среднем нужно 20 минут. Вот и получается,
             что чем больше времени мы проводим в гаджетах, тем больше времени
             затем нужно, чтобы вернуться к работе.
-          </article>
+          </p>
         </div>
-      </div>
-
-      <div class="concentration about_advices">
+      </section>
+      <section class="concentration about_advices">
         <div>
-          <h2 class="header-no-bc new_fish">
+          <h2 class="header-about-concenration-column new_fish">
             Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх
             секунд)
           </h2>
@@ -144,7 +145,7 @@
             5 простых (на самом деле не очень) советов
           </h3>
           <h4 class="subtitle">Представьте небо и облака</h4>
-          <article class="simple-text padding_lists">
+          <p class="simple-text padding_lists">
             Или листья в ручье. Тут дело в лёгкой медитации, которая помогает
             успокоиться. Ведь часто именно тревожные мысли о сложных задачах как
             раз и мешают эти сложные задачи делать. В такие моменты можно
@@ -153,17 +154,16 @@
             где-то там, за тучами, и никуда не денется. Это упражнение поможет
             вернуться в настоящий момент, а не волноваться о потенциальных
             проблемах из будущего.
-          </article>
-
+          </p>
           <h4 class="subtitle about_music">Включите музыку</h4>
-          <article class="simple-text">
+          <p class="simple-text">
             Но не любую, и не любимую. Любимая может быть связана с сильными
             положительными эмоциями, которые тоже очень сильно отвлекают.
             Подойдёт тихая, спокойная, умеренно-ритмичная. Можно вообще
             попробовать включить плейлист в «белым шумом» или нейромузыкой.
-          </article>
+          </p>
           <h4 class="subtitle about_walking">Прогуляйтесь</h4>
-          <article class="simple-text">
+          <div class="simple-text">
             Или даже пробегитесь. Лучше найти парк или лес: один эксперимент
             <a
               class="text_link"
@@ -176,64 +176,65 @@
             совместить прогулку с физическими упражнениями или бегом — так в
             мозг поступит ещё больше кислорода и он будет лучше работать. Но и
             простая двадцатиминутная прогулка — тоже отличный вариант.
-          </article>
+          </div>
           <h4 class="subtitle about_good_eat">Хорошо ешьте</h4>
-          <article class="simple-text">
+          <p class="simple-text">
             Мы — не ваша бабушка, но это правда важно. Выбирайте продукты,
             которые препятствуют резким скачкам сахара в крови. Например, с
             высоким содержанием клетчатки: овощи, ягоды, бобовые (нут, чечевица,
             фасоль), коричневый рис, хлеб из цельнозерновой пшеницы.
-          </article>
+          </p>
           <h4 class="subtitle about_read">Читайте</h4>
-          <article class="simple-text">
+          <p class="simple-text">
             Настоящие бумажные книги. Это правда помогает с концентрацией: чтобы
             прочитать пост в соцсети, достаточно нескольких минут или даже
             секунд. А вот интересная книга способна затянуть и на несколько
             часов и круто тренирует направленное внимание.
-          </article>
+          </p>
         </div>
-      </div>
+      </section>
     </main>
-    <section>
+    <div>
       <h3 class="selected_text title_images">А можно в картинках?</h3>
       <div class="about_images">
         <img
           src="images/sunset.png"
           class="about__logo-image sunset_image"
-          alt="sunset"
+          alt="закат"
           loading="lazy"
         />
         <img
           src="images/ice-cream.png"
           class="about__logo-image ice-cream_image"
-          alt="logo-white"
+          alt="мороженое"
           loading="lazy"
         />
 
         <img
           src="images/tape.png"
           class="about__logo-image tape_image"
-          alt="tape"
+          alt="касеты"
           loading="lazy"
         />
 
         <img
           src="images/books.png"
           class="about__logo-image books_image"
-          alt="books"
+          alt="Книги"
           loading="lazy"
         />
 
         <img
           src="images/street.png"
           class="about__logo-image street_image"
-          alt="street"
+          alt="улица"
           loading="lazy"
         />
       </div>
-    </section>
+    </div>
     <footer class="footer_corner">
-      <div class="footer_label">focus</div>
+      <h2 class="footer_label">focus</h2>
     </footer>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>

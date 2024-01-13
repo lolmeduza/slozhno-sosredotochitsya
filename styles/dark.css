@@ -95,7 +95,7 @@
   font-weight: 400;
   line-height: 18px; /* 100% */
 }
-.header-no-bc {
+.header-about-concenration-column {
   color: var(--accent-color);
   font-family: IBM Plex Mono;
   font-size: 18px;
@@ -251,7 +251,7 @@
   text-decoration-line: underline;
 }
 
-.text_link:focus-visible {
+.text_link:focus {
   outline: 1px solid var(--text-color);
 }
 .header__theme-menu-button_active:hover {
