@@ -19,7 +19,7 @@
   --background-color: #000028;
   --background-image: url(../images/cover-image-dark.png);
 }
-.page {
+/* .page {
   background-color: var(--background-color);
 }
 
@@ -29,7 +29,7 @@
   font-family: IBM Plex Mono;
   font-style: normal;
   font-weight: 700;
-  line-height: 82.5%; /* 95.7px */
+  line-height: 82.5%;
 }
 .footer_label {
   color: var(--logo-color);
@@ -37,7 +37,7 @@
   font-family: IBM Plex Mono;
   font-style: normal;
   font-weight: 700;
-  line-height: 82.5%; /* 95.7px */
+  line-height: 82.5%;
 }
 .selected_text {
   color: #000028;
@@ -46,7 +46,7 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  line-height: 23.4px; /* 130% */
+  line-height: 23.4px;
 }
 .subtitle {
   color: #000028;
@@ -54,12 +54,12 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 23.4px; /* 130% */
+  line-height: 23.4px;
   background-color: var(--accent-color);
 }
 .header_rec::before {
   text-transform: uppercase;
-  /* position: absolute; */
+
   content: "rec";
   color: var(--accent-color);
   text-align: center;
@@ -67,7 +67,7 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 25px; /* 138.889% */
+  line-height: 25px;
 }
 
 .header_rec::after {
@@ -93,7 +93,7 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 18px; /* 100% */
+  line-height: 18px;
 }
 .header-about-concenration-column {
   color: var(--accent-color);
@@ -101,7 +101,7 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  line-height: 23.4px; /* 130% */
+  line-height: 23.4px;
 }
 .simple-text {
   color: var(--text-color);
@@ -109,7 +109,7 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 23.4px; /* 130% */
+  line-height: 23.4px;
 }
 .text_link {
   color: var(--text-color);
@@ -117,7 +117,7 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 23.4px; /* 130% */
+  line-height: 23.4px;
   text-shadow: 2px 2px var(--accent-color);
   text-decoration: none;
 }
@@ -209,7 +209,7 @@
     right: -1px;
   }
   .header_rec {
-    /* margin-right: 12px; */
+
     right: -1px;
     grid-column-start: 5;
     position: absolute;
@@ -217,7 +217,7 @@
   }
   .header_rec::before {
     text-transform: uppercase;
-    /* position: absolute; */
+
     content: "rec";
     color: var(--accent-color);
     text-align: center;
@@ -256,4 +256,79 @@
 }
 .header__theme-menu-button_active:hover {
   outline: 1px solid rgba(255, 0, 112, 0.4);
+} */
+.header__theme-menu-button {
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--accent-color);
+}
+.large_label {
+  color: var(--logo-color);
+  text-shadow: 4px 4px 0px var(--accent-color);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 82.5%;
+}
+.footer_label {
+  color: var(--logo-color);
+  text-shadow: 4px 4px 0px var(--accent-color);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 82.5%;
+}
+.page-title-colors {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+}
+.page-text-color {
+  color: var(--text-color);
+}
+.subtitle-page-color {
+  color: var(--accent-color);
+}
+.small_title_page {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+}
+.text_link:hover {
+  text-decoration-line: underline;
+}
+
+.text_link:focus {
+  outline: 1px solid var(--text-color);
+}
+.header__theme-menu-button_active:hover {
+  outline: 1px solid rgba(255, 0, 112, 0.4);
+}
+.header__theme-menu-button:focus {
+  outline: 1px solid rgba(255, 0, 112, 0.4);
+}
+.header_rec::before {
+  text-transform: uppercase;
+  content: "rec";
+  color: var(--accent-color);
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  position: absolute;
+  font-weight: 400;
+  line-height: 25px;
+  margin-right: 12px;
+  right: 36px;
+}
+.header_rec::after {
+  content: "";
+  background-color: var(--accent-color);
+  display: inline-block;
+  border-radius: 5px;
+  position: absolute;
+  right: 29px;
+  border-style: solid;
+  height: 9px;
+  width: 9px;
+  /* margin-inline-end: 9px; */
+  margin-block-start: 8px;
+  /* margin-block-end: 2px; */
+  border-color: var(--accent-color);
+  text-overflow: inherit;
+  filter: drop-shadow(0px 0px 4px var(--accent-color));
 }
