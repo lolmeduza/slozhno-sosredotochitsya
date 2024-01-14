@@ -8,4 +8,10 @@
   --logo-color: #db00ff;
   --background-image: url(../images/cover-image-dark.png);
   --background-color: #000028;
+  --subtitle-text-color: #000028;
+  --display-rec: block;
+  --button-color: #ff0070;
+  --corner-color: #ff0070;
+  --shadow-color: #ff0070;
+  --title-color: #ff0070;
 }

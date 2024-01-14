@@ -4,60 +4,54 @@
   переключая тему
 */
 .page.theme_light {
+  --corner-color: #353430;
+  --title-color: #353430;
+  --display-rec: none;
+  --shadow-color: #ff0070;
   --accent-color: #ff8dcb;
   --text-color: #353430;
+  --subtitle-text-color: #353430;
+  --button-color: #353430;
   --logo-color: #ffc2e6;
   --background-color: #fff1f7;
   --background-image: url(../images/cover-image-light.png);
-  .header-about-concenration-column {
-    color: var(--text-color);
-  }
 }
 @media (prefers-color-scheme: light) {
   :root {
+    --corner-color: #353430;
+    --title-color: #353430;
+    --display-rec: none;
+    --shadow-color: #ff0070;
     --accent-color: #ff8dcb;
     --text-color: #353430;
+    --subtitle-text-color: #353430;
+    --button-color: #353430;
     --logo-color: #ffc2e6;
     --background-color: #fff1f7;
     --background-image: url(../images/cover-image-light.png);
   }
 }
-
 /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-/* .header__theme-menu-button {
-  color: var(--text-color);
-}
-.header_rec::before {
-  display: none;
-}
 .header_rec {
-  display: none;
+  display: var(--display-rec);
 }
-.header::before {
-  border-top: 1px solid var(--text-color);
-  border-right: 1px solid var(--text-color);
+.large_label {
+  color: var(--logo-color);
+  text-shadow: 4px 4px 0px var(--shadow-color);
 }
-.header::after {
-  border-bottom: 1px solid var(--text-color);
-  border-left: 1px solid var(--text-color);
+.page-title-colors {
+  background-color: var(--accent-color);
+  color: var(--subtitle-text-color);
 }
-.footer_corner::before {
-  border-top: 1px solid var(--text-color);
-  border-right: 1px solid var(--text-color);
+.subtitle-page-color {
+  color: var(--title-color);
 }
-.footer_corner::after {
-  border-bottom: 1px solid var(--text-color);
-  border-left: 1px solid var(--text-color);
+.small_title_page {
+  color: var(--subtitle-text-color);
 }
-@media (375px <= width < 768px) {
-  .header__theme-menu-list {
-    margin-block-start: 67px;
-  }
-  .header::before {
-    top: -67px;
-    right: 0px;
-  }
-} */
+.footer_label {
+  text-shadow: 2px 2px 0px var(--shadow-color);
+}
