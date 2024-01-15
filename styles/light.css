@@ -35,23 +35,3 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-.header_rec {
-  display: var(--display-rec);
-}
-.large_label {
-  color: var(--logo-color);
-  text-shadow: 4px 4px 0px var(--shadow-color);
-}
-.page-title-colors {
-  background-color: var(--accent-color);
-  color: var(--subtitle-text-color);
-}
-.subtitle-page-color {
-  color: var(--title-color);
-}
-.small_title_page {
-  color: var(--subtitle-text-color);
-}
-.footer_label {
-  text-shadow: 2px 2px 0px var(--shadow-color);
-}
