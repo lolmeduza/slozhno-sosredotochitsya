@@ -80,8 +80,6 @@
 .header__theme-menu-button:focus-visible {
   border: none;
   border-bottom: 1px solid var(--button-color);
-  /* text-decoration-color: var(--button-color);
-  text-underline-position: under; */
   outline: none;
 }
 .header {
@@ -98,6 +96,7 @@
   grid-column-end: 4;
 }
 .footer_page {
+  position: relative;
   min-height: 668px;
   height: 100vh;
   padding: 20px;
@@ -120,9 +119,8 @@
   height: 25px;
   border-bottom: 1px solid var(--corner-color);
   border-left: 1px solid var(--corner-color);
-  margin-top: 623px;
-  left: 10px;
 }
+
 .large_label {
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-style: normal;
@@ -290,13 +288,21 @@
   .footer_page {
     margin-top: 60px;
   }
-  .decorated-zone::before {
+  .header.decorated-zone::before {
     right: 20px;
-    margin-bottom: 705px;
+    top: 20px;
   }
-  .decorated-zone::after {
-    margin-top: 702px;
+  .header.decorated-zone::after {
     left: 20px;
+    bottom: 20px;
+  }
+  .footer_page.decorated-zone::before {
+    right: 20px;
+    top: 20px;
+  }
+  .footer_page.decorated-zone::after {
+    left: 20px;
+    bottom: 20px;
   }
 }
 @media (768px<= width < 1024px) {
@@ -362,13 +368,22 @@
   .footer_page {
     margin-top: 60px;
   }
-  .decorated-zone::before {
+
+  .header.decorated-zone::before {
     right: 20px;
-    margin-bottom: 705px;
+    top: 20px;
   }
-  .decorated-zone::after {
-    margin-top: 702px;
+  .header.decorated-zone::after {
     left: 20px;
+    bottom: 20px;
+  }
+  .footer_page.decorated-zone::before {
+    right: 20px;
+    top: 20px;
+  }
+  .footer_page.decorated-zone::after {
+    left: 20px;
+    bottom: 20px;
   }
 }
 @media (375px<= width < 768px) {
@@ -420,13 +435,22 @@
   .footer_label {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
-  .decorated-zone::before {
+
+  .header.decorated-zone::before {
     right: 10px;
-    margin-bottom: 624px;
+    top: 10px;
   }
-  .decorated-zone::after {
-    margin-top: 623px;
+  .header.decorated-zone::after {
     left: 10px;
+    bottom: 10px;
+  }
+  .footer_page.decorated-zone::before {
+    right: 10px;
+    top: 7px;
+  }
+  .footer_page.decorated-zone::after {
+    left: 10px;
+    bottom: 15px;
   }
 
   .header_rec::before {
